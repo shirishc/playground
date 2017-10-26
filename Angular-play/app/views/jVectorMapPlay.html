@@ -1,0 +1,18 @@
+<div class="container" ng-controller="jVectorMapPlayController">
+    <div class="row">
+        <div class="col-xs-12">
+           <ul class="breadcrumb">
+               <li><a href="index.html">Home</a></li>
+               <li class="active">jVectorMapPlay</li>
+           </ul>
+        </div>
+        <div class="col-xs-12">
+           <h3>jVectorMapPlay</h3><button ng-click="changeColour()" class="btn btn-primary">Change Map</button>
+           <hr>
+        </div>
+    </div>
+
+    <div class="row">
+        <div vector-map on-region-click="onMapClick(e, regionCode)" style="height: 400px;" my-map-data="map_data" ></div>
+    </div>
+</div>
